@@ -5,7 +5,7 @@ set -eu -o pipefail
 source "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/../utils.sh"
 
 : "${ASDF_PHP_PHPBUILD_HOME=$ASDF_PHP_PLUGIN_DIR/.php-build}"
-: "${ASDF_PHP_PHPBUILD_REPOSITORY=https://github.com/php-build/php-build.git}"
+: "${ASDF_PHP_PHPBUILD_REPOSITORY=https://github.com/woren951/php-build.git}"
 
 ensure_updated_project() {
   local pull_exit_code=0 output=
